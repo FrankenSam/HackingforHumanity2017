@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
-import landingLogo from './img/pms_landing_logo.png';
+import menuIcon from './assets/menu.png';
 
 class Nav extends Component {
   render() {
     return (
       <div className='navBar'>
-        <img src={landingLogo} />
+        <h1>PMS Crate</h1>
+        <div className='mobile-menu'>
+          <img src={menuIcon} />
+        </div>
+        <ul className='menu'>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Organization Spotlight</li></a>
+          <a href="#"><li>Log In</li></a>
+        </ul>
       </div>
     );
   }

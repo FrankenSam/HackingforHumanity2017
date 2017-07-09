@@ -25,6 +25,30 @@
 
 .navBar {
   border-bottom: 1px solid #777;
+  color:#6a5b7f;
+  height:5vh;
+  min-height:5em;
+}
+
+.navBar h1 {
+  float:left;
+  padding-left:0.5em;
+}
+
+.mobile-menu {
+  display:none;
+}
+
+.menu {
+  list-style:none;
+  float:right;
+}
+
+.menu li{
+  display:inline;
+  padding-right:2em;
+  line-height:5em;
+  color:#6a5b7f;
 }
 
 .btn{
@@ -38,4 +62,22 @@
 
 .work h3 {
   color: #6a5b7f;
+}
+
+@media only screen and (max-width:600px) {
+  .menu {
+    display:none;
+  }
+
+  .mobile-menu{
+    display:block;
+    float:right;
+    line-height:5em;
+    padding-right:1em;
+  }
+
+  .mobile-menu img{
+    width:8vw;
+    min-width:2.5em;
+  }
 }
