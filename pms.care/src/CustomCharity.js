@@ -53,7 +53,8 @@ class CustomCharity extends Component {
       displayCategories: true,
       displayCharities: false,
       selectedCharitiesList: {},
-      selectedCharity: {}
+      selectedCharity: {},
+      charityIsSelected: false
     });
   }
 
