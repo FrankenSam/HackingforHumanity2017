@@ -23,6 +23,10 @@
   to { transform: rotate(360deg); }
 }
 
+p {
+  font-family: 'Lato', sans-serif;
+}
+
 .navBar {
   border-bottom: 1px solid #777;
   color:#6a5b7f;
@@ -56,12 +60,35 @@
   border-radius:70em;
 }
 
+.getStarted {
+  padding: 9px 44px 9px 44px;
+  color: #b8a7d1;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+
 .work {
-  background-color: #b8a7d1;
+  background-color: #D8C9E9;
+}
+
+.step h4 {
+  text-align: left;
+  font-family: 'Arvo', serif;
+}
+
+.step p {
+  text-align: left;
+}
+
+.mainDesc {
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 50px;
 }
 
 .work h3 {
   color: #6a5b7f;
+  text-align: left;
 }
 
 @media only screen and (max-width:600px) {
@@ -80,4 +107,9 @@
     width:8vw;
     min-width:2.5em;
   }
+}
+
+.stepHeader {
+  color: #fff;
+  font-size: 30px;
 }
