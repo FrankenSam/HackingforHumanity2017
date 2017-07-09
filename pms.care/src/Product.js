@@ -17,7 +17,7 @@ class Product extends Component {
       <div>
         <h1>{this.props.title}</h1>
         <p>{this.props.desc}</p>
-        <img src={this.props.image} />
+        <img className='img-responsive' src={this.props.image} />
         <button className='btn' onClick={this.handleClick}>Add to cart</button>
       </div>
     );
