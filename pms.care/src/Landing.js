@@ -21,19 +21,19 @@ class Landing extends Component {
           <div className='container'>
             <h3>How does it work?</h3>
             <div className='step col-md-4'>
-              <img className='img-responsive' src={step1}/>
+              <img className='img-responsive img-step' src={step1}/>
               <h4 className='stepHeader'>Step 1</h4>
               <p>Pick a women-focused charity or non-profit.</p>
               <p>You can choose from the month's featured charity or non-profit, or we can help you choose based on your interests.</p>
             </div>
             <div className='step col-md-4'>
-              <img className='img-responsive' src={step2}/>
+              <img className='img-responsive img-step' src={step2}/>
               <h4 className='stepHeader'>Step 2</h4>
               <p>Pick products for your crate from a curated list of self-car items for your mind, body, and soul.</p>
               <p>We help support small women-owned businesses and indie brands.</p>
             </div>
             <div className='step col-md-4'>
-              <img className='img-responsive' src={step3}/>
+              <img className='img-responsive img-step' src={step3}/>
               <h4 className='stepHeader'>Step 3</h4>
               <p>Wait patiently (and excitedly) for your crate to come in the mail!</p>
               <p>You can choose to buy one as a gift (treat yo self!) or monthly subscriptions to help prepare for your time of the month.</p>

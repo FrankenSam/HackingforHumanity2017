@@ -65,7 +65,8 @@ class CustomCharity extends Component {
   render() {
     return (
       <div>
-        Chose A Category!
+        <h2>Chose A Category!</h2>
+        <br></br>
         {this.state.displayCategories ? this.props.charityCategories.map((category, index) => {
           return <button className='btn' onClick={this.selectCategory.bind(this,category, this.props.charityList)}>{category}</button>
         }) : ''}
@@ -75,6 +76,7 @@ class CustomCharity extends Component {
           return <button className='btn' onClick={this.selectCharity.bind(this, charity.name, charity)}>{charity.name}</button>
         }) : ''}
 
+        <br></br>
         {this.state.displayCharities ? <button className='btn' onClick={this.goBack}>Go Back</button>: ''}
         
         {this.state.charityIsSelected ? <CharityDetails charity={this.state.selectedCharity} /> : ''}
