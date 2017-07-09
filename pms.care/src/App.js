@@ -5,6 +5,7 @@ import Package from './Package';
 import Footer from './Footer';
 import CharityOption from './CharityOption';
 import CustomCharity from './CustomCharity';
+import Landing from './Landing';
 import './App.css';
 
 class App extends Component {
@@ -138,7 +139,8 @@ class App extends Component {
       ],
       'cart': [],
       'isCharityChosen': false,
-      'customCharityIsChosen': false
+      'customCharityIsChosen': false,
+      'processStarted': false
     }
     this.addToCart = this.addToCart.bind(this);
     this.charityIsChosen = this.charityIsChosen.bind(this);
@@ -171,7 +173,7 @@ class App extends Component {
     return (
       <div className="App">
         <Nav />
-        {this.state.isCharityChosen ? 
+        {!this.state.processStarted ? <Landing/> : this.state.isCharityChosen ? 
         <Package mindItems={this.state.mindItems} bodyItems={this.state.bodyItems} soulItems={this.state.soulItems} cart={this.state.cart}
         addToCart={this.addToCart}/> 
         : this.state.customCharityIsChosen ? <CustomCharity charityList={this.state.charityList} charityCategories={this.state.charityCategories}/> :
