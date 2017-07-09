@@ -11,6 +11,52 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      'charityList': [
+        {
+          'name': 'charity1',
+          'category': 'category1',
+          'rating': 'A',
+          'description': 'This is a charity description',
+          'website': 'This is a charity URL'
+        },
+         {
+          'name': 'charity2',
+          'category': 'category1',
+          'rating': 'A-',
+          'description': 'This is a charity description',
+          'website': 'This is a charity URL'
+        },
+         {
+          'name': 'charity3',
+          'category': 'category2',
+          'rating': 'A-',
+          'description': 'This is a charity description',
+          'website': 'This is a charity URL'
+        },
+         {
+          'name': 'charity4',
+          'category': 'category2',
+          'rating': 'B+',
+          'description': 'This is a charity description',
+          'website': 'This is a charity URL'
+        },
+         {
+          'name': 'charity5',
+          'category': 'category3',
+          'rating': 'A',
+          'description': 'This is a charity description',
+          'website': 'This is a charity URL'
+        }
+
+      ],
+      'charityCategories': [
+        'category1',
+        'category2',
+        'category3',
+        'category4',
+        'category5'
+      ],
+
       'mindItems': [
         {
           'img': 'http://via.placeholder.com/150x150',
@@ -100,7 +146,7 @@ class App extends Component {
         {this.state.isCharityChosen ? 
         <Package mindItems={this.state.mindItems} bodyItems={this.state.bodyItems} soulItems={this.state.soulItems} cart={this.state.cart}
         addToCart={this.addToCart}/> 
-        : this.state.customCharityIsChosen ? <CustomCharity /> :
+        : this.state.customCharityIsChosen ? <CustomCharity charityList={this.state.charityList} charityCategories={this.state.charityCategories}/> :
         <CharityOption customCharityIsChosen={this.customCharityIsChosen}  charityIsChosen={this.charityIsChosen}/>}
         {this.state.isCharityChosen ? <Footer cart={this.state.cart} /> : ''}
       </div>
