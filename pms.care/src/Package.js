@@ -13,7 +13,6 @@ class Package extends Component {
         <ProductList items={this.props.mindItems} catagory='mindItems' cart={this.props.cart} addToCart={this.props.addToCart}/>
         <ProductList items={this.props.bodyItems} catagory='bodyItems' cart={this.props.cart} addToCart={this.props.addToCart}/>
         <ProductList items={this.props.soulItems} catagory='soulItems' cart={this.props.cart} addToCart={this.props.addToCart}/>
-        <h4>{this.props.cart.length} / 10</h4>
       </div>
     );
   }

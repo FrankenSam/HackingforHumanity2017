@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import Nav from './Nav';
 import Package from './Package';
+import Footer from './Footer';
 import './App.css';
 
 class App extends Component {
@@ -79,6 +80,7 @@ class App extends Component {
         <Nav />
         <Package mindItems={this.state.mindItems} bodyItems={this.state.bodyItems} soulItems={this.state.soulItems} cart={this.state.cart}
         addToCart={this.addToCart}/>
+        <Footer cart={this.state.cart} />
       </div>
     );
   }
