@@ -48,13 +48,18 @@ class CharityOption extends Component {
   render() {
     return (
       <div>
-        <h1>Choose your charity</h1>
-        <img src='http://via.placeholder.com/150x150'/>
-        <label for="default">Our Choice</label>
-        <input onClick={this.handleDefaultClick} type="radio" id="default" value="default"/>
-        <img src='http://via.placeholder.com/150x150'/>
-        <label for="pick">Pick your own women charity</label>
-        <input onClick={this.handleCustomClick} type="radio" id="pick" value="pick"/>
+        <div className='container'>
+          <div className='col-md-6 default'>
+            <h2>Pick-Your-Own</h2>
+            <p>The option to chose your own organization from our list of organization support women.</p>
+            <button className='btn' onClick={this.handleCustomClick}>Choose this option</button>
+          </div>
+          <div className='col-md-6 pick'>
+            <h2>July's Organization</h2>
+            <p>This month we’ve chosen Mary’s Place. Mary’s Place is a leading voice for homeless women, children, and families in emergency situations.</p>
+            <button className='btn' onClick={this.handleDefaultClick}>Choose this option</button>
+          </div>  
+        </div>
         {this.state.clicked ? <button className='btn' onClick={this.handleButtonClick}>Next</button> : ''}
       </div>
     );
