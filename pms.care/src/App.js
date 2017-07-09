@@ -145,6 +145,7 @@ class App extends Component {
     this.addToCart = this.addToCart.bind(this);
     this.charityIsChosen = this.charityIsChosen.bind(this);
     this.customCharityIsChosen = this.customCharityIsChosen.bind(this);
+    this.startProcess = this.startProcess.bind(this);
   }
 
   addToCart(list, index){
@@ -169,11 +170,17 @@ class App extends Component {
     });
   }
 
+  startProcess() {
+    this.setState({
+      processStarted: true
+    });
+  }
+
   render() {
     return (
       <div className="App">
         <Nav />
-        {!this.state.processStarted ? <Landing/> : this.state.isCharityChosen ? 
+        {!this.state.processStarted ? <Landing processStarted={this.startProcess}/> : this.state.isCharityChosen ? 
         <Package mindItems={this.state.mindItems} bodyItems={this.state.bodyItems} soulItems={this.state.soulItems} cart={this.state.cart}
         addToCart={this.addToCart}/> 
         : this.state.customCharityIsChosen ? <CustomCharity charityList={this.state.charityList} charityCategories={this.state.charityCategories} charityIsChosen={this.charityIsChosen}/> :
