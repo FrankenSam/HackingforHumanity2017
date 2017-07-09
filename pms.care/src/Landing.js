@@ -23,7 +23,6 @@ class Landing extends Component {
             <p>You can choose from the month's featured charity or non-profit, or we can help you choose based on your interests.</p>
           </div>
         </div>
-
       </div>
     );
   }
