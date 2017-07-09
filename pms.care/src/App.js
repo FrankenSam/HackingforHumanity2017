@@ -14,76 +14,117 @@ class App extends Component {
     this.state = {
       'charityList': [
         {
-          'name': 'charity1',
-          'category': 'category1',
+          'name': 'PAI',
+          'category': 'REPRODUCTIVE HEALTH, FAMILY PLANNING, & ABORTION',
           'rating': 'A',
-          'description': 'This is a charity description',
-          'website': 'This is a charity URL'
+          'description': 'Champions policies that make it possible for women to exercise their reproductive rights, and fights to remove the policy barriers between women and the care they need; works with policymakers in Washington & its network of partners in developing countries to advance women\'s reproductive rights.',
+          'website': 'www.pai.org'
         },
          {
-          'name': 'charity2',
-          'category': 'category1',
-          'rating': 'A-',
-          'description': 'This is a charity description',
-          'website': 'This is a charity URL'
+          'name': 'National Alliance to End Homelessness',
+          'category': 'HOMELESSNESS',
+          'rating': 'A+',
+          'description': 'Preventing and ending homelessness in the United States.',
+          'website': 'www.endhomelessness.org'
         },
          {
-          'name': 'charity3',
-          'category': 'category2',
-          'rating': 'A-',
-          'description': 'This is a charity description',
-          'website': 'This is a charity URL'
-        },
-         {
-          'name': 'charity4',
-          'category': 'category2',
-          'rating': 'B+',
-          'description': 'This is a charity description',
-          'website': 'This is a charity URL'
-        },
-         {
-          'name': 'charity5',
-          'category': 'category3',
+          'name': 'Bowery Residents\' Committee',
+          'category': 'HOMELESSNESS',
           'rating': 'A',
-          'description': 'This is a charity description',
-          'website': 'This is a charity URL'
+          'description': 'To meet the needs of people with low income, homeless, hungry, chemically dependent, psychiatrically disabled, aged and persons with HIV and AIDS. Provides a comprehensive array of services, including health care, vocational rehabilitation, AIDS services, community education and advocacy.',
+          'website': 'www.brc.org'
+        },
+         {
+          'name': 'Center for Community Change',
+          'category': 'HOMELESSNESS',
+          'rating': 'A-',
+          'description': 'To build the power and capacity of low-income people, especially low-income people of color, to change their communities and public policies for the better.',
+          'website': 'www.communitychange.org'
         },
         {
-          'name': 'charity6',
-          'category': 'category4',
+          'name': 'Astraea Lesbian Foundation for Justice',
+          'category': 'LGBTQ RIGHTS & ADVOCACY',
           'rating': 'A',
-          'description': 'This is a charity description',
-          'website': 'This is a charity URL'
+          'description': 'Funds LGBTQI activism globally, serving as a feminist social justice hub and working side-by-side with grantee and donor partners to achieve rural, economic, social and gender justice worldwide.',
+          'website': 'www.astraeafoundation.org'
         },
                {
-          'name': 'charity7',
-          'category': 'category4',
+          'name': 'Trevor Project',
+          'category': 'LGBTQ RIGHTS & ADVOCACY',
           'rating': 'A',
-          'description': 'This is a charity description',
-          'website': 'This is a charity URL'
+          'description': 'To end suicide among lesbian, gay, bisexual, transgender and questioning (LGBTQ) young people.',
+          'website': 'www.thetrevorproject.org'
         },
                {
-          'name': 'charity8',
-          'category': 'category5',
-          'rating': 'A',
-          'description': 'This is a charity description',
-          'website': 'This is a charity URL'
+          'name': 'Center for Reproductive Rights',
+          'category': 'WOMEN RIGHTS',
+          'rating': 'A-',
+          'description': 'Legal advocacy organization dedicated to promoting and defending women\'s reproductive rights worldwide; uses the law to advance reproductive freedom as a fundamental human right that all governments are legally obligated to protect, respect, & fulfill.',
+          'website': 'www.reproductiverights.org'
         },
                {
-          'name': 'charity9',
-          'category': 'category5',
+          'name': 'Global Fund for Women',
+          'category': 'WOMEN RIGHTS',
           'rating': 'A',
-          'description': 'This is a charity description',
-          'website': 'This is a charity URL'
+          'description': 'Global champion for the human rights of women & girls; uses its powerful networks to find, fund, and amplify the courageous work of women who are building social movements & challenging the status quo.',
+          'website': 'www.globalfundforwomen.org'
+        },
+                       {
+          'name': 'Guttmacher Institute',
+          'category': 'WOMEN RIGHTS',
+          'rating': 'A-',
+          'description': 'To advance sexual & reproductive health & rights through an interrelated program of research, policy analysis, and communications & publications designed to generate new ideas, encourage enlightened public debate, and promote sound policy & program development.',
+          'website': 'www.guttmacher.org'
+        },
+                               {
+          'name': 'Women for Women International U.S.',
+          'category': 'WOMEN RIGHTS',
+          'rating': 'B+',
+          'description': 'In countries affected by conflict & war, supports the most marginalized women to earn & save money, improve health & well-being, influence decisions in their home & community, and connect to networks for support.',
+          'website': 'www.womenforwomen.org'
+        },
+                               {
+          'name': 'Planned Parenthood Federation of America',
+          'category': 'REPRODUCTIVE HEALTH, FAMILY PLANNING, & ABORTION',
+          'rating': 'A-',
+          'description': 'Ensuring the provision of comprehensive reproductive and complementary health services in settings which preserve and protect the essential privacy and rights of each individual; advocating public policies which guarantee these rights and ensure access to such services; providing educational programs which enhance understanding of individual and societal implications of human sexuality; and promoting research and the advancement of technology in reproductive health care and encouraging the understanding of their inherent bioethical, behavioral, and social implications.',
+          'website': 'www.plannedparenthood.org'
+        },
+                               {
+          'name': 'EngenderHealth ',
+          'category': 'WOMEN HEALTH',
+          'rating': 'A-',
+          'description': 'To improve the health and well-being of people in the poorest communities of the world by sharing expertise in sexual and reproductive health and transforming of the quality of health care.',
+          'website': 'www.engenderhealth.org'
+        },
+                               {
+          'name': 'Fistula Foundation',
+          'category': 'REPRODUCTIVE HEALTH, FAMILY PLANNING, & ABORTION',
+          'rating': 'A',
+          'description': 'To raise awareness of and funding for fistula repair, prevention, and educational programs worldwide.',
+          'website': 'www.fistulafoundation.org'
+        },
+                               {
+          'name': 'Breast Cancer Prevention Partners',
+          'category': 'WOMEN HEALTH',
+          'rating': 'A-',
+          'description': 'Working to stop breast cancer before it starts by exposing and eliminating the environmental causes of the disease.',
+          'website': 'www.bcpp.org'
+        },
+                               {
+          'name': 'Breast Cancer Research Foundation',
+          'category': 'WOMEN HEALTH',
+          'rating': 'A+',
+          'description': 'To prevent and cure breast cancer by advancing the world\'s most promising research.',
+          'website': 'www.bcrfcure.org'
         }
-
       ],
       'charityCategories': [
-        'category1',
-        'category2',
-        'category3',
-        'category4',
-        'category5'
+        'WOMEN HEALTH',
+        'WOMEN RIGHTS',
+        'REPRODUCTIVE HEALTH, FAMILY PLANNING, & ABORTION',
+        'HOMELESSNESS',
+        'LGBTQ RIGHTS & ADVOCACY'
       ],
 
       'mindItems': [
