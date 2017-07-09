@@ -55,7 +55,7 @@ class CharityOption extends Component {
         <img src='http://via.placeholder.com/150x150'/>
         <label for="pick">Pick your own women charity</label>
         <input onClick={this.handleCustomClick} type="radio" id="pick" value="pick"/>
-        {this.state.clicked ? <button onClick={this.handleButtonClick}>Next</button> : ''}
+        {this.state.clicked ? <button className='btn' onClick={this.handleButtonClick}>Next</button> : ''}
       </div>
     );
   }

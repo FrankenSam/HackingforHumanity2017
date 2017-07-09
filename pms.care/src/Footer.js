@@ -10,7 +10,7 @@ class Footer extends Component {
         <h1>{this.props.cart.length} Items</h1>:""
         }
         
-        <button>Submit</button>
+        <button className='btn'>Submit</button>
       </div>
     );
   }
