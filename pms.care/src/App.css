@@ -25,18 +25,23 @@
 
 p {
   font-family: 'Lato', sans-serif;
+  font-size:1.25em;
 }
 
 .navBar {
-  border-bottom: 1px solid #777;
+  width:100%;
+  /*position:fixed;*/
   color:#6a5b7f;
   height:5vh;
   min-height:5em;
+  background-color:#fff;
+  /*box-shadow: 5px 0px 5px #888888;*/
 }
 
 .navBar h1 {
   float:left;
   padding-left:0.5em;
+  font-family:Arvo,serif;
 }
 
 .mobile-menu {
@@ -61,14 +66,24 @@ p {
 }
 
 .getStarted {
-  padding: 9px 44px 9px 44px;
-  color: #b8a7d1;
+  margin-top:2em;
+  padding: 15px 44px 15px 44px;
+  color: #6a5b7f;
   font-family: 'Lato', sans-serif;
-  font-size: 15px;
+  font-size: 1.25em;
 }
 
 .work {
   background-color: #D8C9E9;
+}
+
+h3{
+  margin-top:3em;
+  margin-bottom:3em;
+}
+
+.step{
+  padding:0em 2em 6em 2em;
 }
 
 .step h4 {
@@ -84,11 +99,17 @@ p {
   text-align: left;
   font-family: 'Lato', sans-serif;
   margin-bottom: 50px;
+  padding-top:7em;
 }
 
 .work h3 {
   color: #6a5b7f;
   text-align: left;
+}
+
+.img-step{
+  width:75%;
+  text-align:center
 }
 
 @media only screen and (max-width:600px) {
