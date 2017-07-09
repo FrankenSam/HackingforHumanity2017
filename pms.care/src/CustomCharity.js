@@ -16,22 +16,22 @@ class CustomCharity extends Component {
     }
     this.getCharityList = this.getCharityList.bind(this);
     this.selectCategory = this.selectCategory.bind(this);
+    this.goBack = this.goBack.bind(this);
 
 
   }
 
   getCharityList(category, charityList){
     var charitiesByCategory = [];
-    for(var charity in charityList){
-      if(charity.category === category){
-        charitiesByCategory.push(charity);
+    for(var i =0; i<charityList.length; i++){
+      if(charityList[i].category == category){
+        charitiesByCategory.push(charityList[i]);
       }
     }
     return charitiesByCategory;
   }
 
   selectCategory(category, charityList){
-    console.log(charityList);
     var selectedCharitiesList = this.getCharityList(category, charityList);
     this.setState({
       displayCategories: false,
@@ -40,8 +40,12 @@ class CustomCharity extends Component {
     });
   }
 
-  test(){
-    console.log(this.props.charityList);
+  goBack(){
+    this.setState({
+      displayCategories: true,
+      displayCharities: false,
+      selectedCharitiesList: {}
+    });
   }
 
   render() {
@@ -49,13 +53,15 @@ class CustomCharity extends Component {
       <div>
         Chose A Category!
         {this.state.displayCategories ? this.props.charityCategories.map((category, index) => {
-          return <button onClick={this.selectCategory.bind(category, this.props.charityList)}>{category}</button>
+          return <button onClick={this.selectCategory.bind(this,category, this.props.charityList)}>{category}</button>
         }) : ''}
 
 
         {this.state.displayCharities ? this.state.selectedCharitiesList.map((charity, index) => {
           return <button>{charity.name}</button>
         }) : ''}
+
+        {this.state.displayCharities ? <button onClick={this.goBack}>Go Back</button>: ''}
         
         {this.state.charityIsSelected ? <CharityDetails charity={this.state.selectedCharity} /> : ''}
       </div>
