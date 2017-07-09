@@ -7,6 +7,9 @@ import CharityOption from './CharityOption';
 import CustomCharity from './CustomCharity';
 import Landing from './Landing';
 import './App.css';
+import bodyImage from './assets/body_tea.jpg'
+import mindImage from './assets/mind_glacier-candles.png'
+import soulImage from './assets/soul_candy.jpg'
 
 class App extends Component {
   constructor() {
@@ -129,51 +132,51 @@ class App extends Component {
 
       'mindItems': [
         {
-          'img': 'http://via.placeholder.com/150x150',
+          'img': mindImage,
           'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ',
           'title': 'Mind 1'
         },
         {
-          'img': 'http://via.placeholder.com/150x150',
+          'img': mindImage,
           'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ',
           'title': 'Mind 2'
         },
         {
-          'img': 'http://via.placeholder.com/150x150',
+          'img': mindImage,
           'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ',
           'title': 'Mind 3'
         }
       ],
       'bodyItems': [
         {
-          'img': 'http://via.placeholder.com/150x150',
+          'img': bodyImage,
           'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ',
           'title': 'Body Item 1'
         },
         {
-          'img': 'http://via.placeholder.com/150x150',
+          'img': bodyImage,
           'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ',
           'title': 'Body Item 2'
         },
         {
-          'img': 'http://via.placeholder.com/150x150',
+          'img': bodyImage,
           'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ',
           'title': 'Body Item 3'
         }
       ],
       'soulItems': [
         {
-          'img': 'http://via.placeholder.com/150x150',
+          'img': soulImage,
           'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ',
           'title': 'Soul Items 1'
         },
         {
-          'img': 'http://via.placeholder.com/150x150',
+          'img': soulImage,
           'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ',
           'title': 'Soul Items 2'
         },
         {
-          'img': 'http://via.placeholder.com/150x150',
+          'img': soulImage,
           'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ',
           'title': 'Soul Items 3'
         }
