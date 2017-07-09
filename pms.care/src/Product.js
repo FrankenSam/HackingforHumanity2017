@@ -18,7 +18,7 @@ class Product extends Component {
         <h1>{this.props.title}</h1>
         <p>{this.props.desc}</p>
         <img src={this.props.image} />
-        <button onClick={this.handleClick}>Add to cart</button>
+        <button className='btn' onClick={this.handleClick}>Add to cart</button>
       </div>
     );
   }

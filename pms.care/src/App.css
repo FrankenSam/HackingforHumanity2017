@@ -26,3 +26,8 @@
 .navBar {
   border-bottom: 1px solid #777;
 }
+
+.btn{
+  background-color:#ffeb99;
+  border-radius:70em;
+}

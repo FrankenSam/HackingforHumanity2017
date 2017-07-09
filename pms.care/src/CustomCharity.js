@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import CharityDetails from './CharityDetails';
 import './App.css';
 
-
 class CustomCharity extends Component {
   constructor() {
     super();
@@ -67,15 +66,15 @@ class CustomCharity extends Component {
       <div>
         Chose A Category!
         {this.state.displayCategories ? this.props.charityCategories.map((category, index) => {
-          return <button onClick={this.selectCategory.bind(this,category, this.props.charityList)}>{category}</button>
+          return <button className='btn' onClick={this.selectCategory.bind(this,category, this.props.charityList)}>{category}</button>
         }) : ''}
 
 
         {this.state.displayCharities ? this.state.selectedCharitiesList.map((charity, index) => {
-          return <button onClick={this.selectCharity.bind(this, charity.name, charity)}>{charity.name}</button>
+          return <button className='btn' onClick={this.selectCharity.bind(this, charity.name, charity)}>{charity.name}</button>
         }) : ''}
 
-        {this.state.displayCharities ? <button onClick={this.goBack}>Go Back</button>: ''}
+        {this.state.displayCharities ? <button className='btn' onClick={this.goBack}>Go Back</button>: ''}
         
         {this.state.charityIsSelected ? <CharityDetails charity={this.state.selectedCharity} /> : ''}
         {this.state.charityIsSelected ? <button onClick={this.handleNext}>Next</button> : ''}
