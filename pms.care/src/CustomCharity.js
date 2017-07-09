@@ -80,7 +80,7 @@ class CustomCharity extends Component {
         {this.state.displayCharities ? <button className='btn' onClick={this.goBack}>Go Back</button>: ''}
         
         {this.state.charityIsSelected ? <CharityDetails charity={this.state.selectedCharity} /> : ''}
-        {this.state.charityIsSelected ? <button onClick={this.handleNext}>Next</button> : ''}
+        {this.state.charityIsSelected ? <button className='btn' onClick={this.handleNext}>Next</button> : ''}
       </div>
     );
   }

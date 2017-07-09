@@ -28,6 +28,36 @@ p {
   font-size:1.25em;
 }
 
+a{
+  font-style:italic;
+  text-decoration:underline;
+  color:#b8a7d1;
+}
+
+a:hover{
+  font-style:italic;
+}
+
+.product-page h1{
+  font-family:Arvo,serif;
+  font-size:2em;
+  color:#6a5b7f;
+}
+
+.charity-page{
+  width:100vw;
+}
+
+.charity-page h4{
+  font-family:Arvo,serif;
+  font-size:2em;
+}
+
+.charity-page p{
+  margin:0 auto;
+  width:50%;
+}
+
 .navBar {
   width:100%;
   /*position:fixed;*/
@@ -58,6 +88,11 @@ p {
   padding-right:2em;
   line-height:5em;
   color:#6a5b7f;
+  font-style:normal;
+}
+
+.menu a{
+  text-decoration:none;
 }
 
 .btn{

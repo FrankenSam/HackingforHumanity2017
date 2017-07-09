@@ -10,12 +10,12 @@ class CharityDetails extends Component {
   render() {
     var url = 'https://' + this.props.charity.website;
     return (
-      <div>
+      <div className='charity-page'>
         <h4>{this.props.charity.name}</h4>
+        <a href={url} target="_blank">Visit Website</a>
         <p>{this.props.charity.category}</p>
-        <p>{this.props.charity.rating}</p>
+        <p>{this.props.charity.rating} Rating</p>
         <p>{this.props.charity.description}</p>
-        <a href={url} target="_blank">{url}</a>
       </div>
     );
   }
