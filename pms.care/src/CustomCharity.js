@@ -18,6 +18,7 @@ class CustomCharity extends Component {
     this.selectCategory = this.selectCategory.bind(this);
     this.selectCharity = this.selectCharity.bind(this);
     this.goBack = this.goBack.bind(this);
+    this.handleNext = this.handleNext.bind(this);
 
 
   }
@@ -42,15 +43,10 @@ class CustomCharity extends Component {
   }
 
   selectCharity(name, charity){
-    console.log('inside selectcharity');
-    console.log(name);
-    console.log(charity);
     this.setState({
       charityIsSelected: true,
       selectedCharity: charity
     });
-    console.log(this.charityIsSelected);
-    //console.log(selec)
   }
 
   goBack(){
@@ -60,6 +56,10 @@ class CustomCharity extends Component {
       selectedCharitiesList: {},
       selectedCharity: {}
     });
+  }
+
+  handleNext(){
+    this.props.charityIsChosen();
   }
 
   render() {
@@ -78,6 +78,7 @@ class CustomCharity extends Component {
         {this.state.displayCharities ? <button onClick={this.goBack}>Go Back</button>: ''}
         
         {this.state.charityIsSelected ? <CharityDetails charity={this.state.selectedCharity} /> : ''}
+        {this.state.charityIsSelected ? <button onClick={this.handleNext}>Next</button> : ''}
       </div>
     );
   }
