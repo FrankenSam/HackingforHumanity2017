@@ -46,6 +46,34 @@ class App extends Component {
           'rating': 'A',
           'description': 'This is a charity description',
           'website': 'This is a charity URL'
+        },
+        {
+          'name': 'charity6',
+          'category': 'category4',
+          'rating': 'A',
+          'description': 'This is a charity description',
+          'website': 'This is a charity URL'
+        },
+               {
+          'name': 'charity7',
+          'category': 'category4',
+          'rating': 'A',
+          'description': 'This is a charity description',
+          'website': 'This is a charity URL'
+        },
+               {
+          'name': 'charity8',
+          'category': 'category5',
+          'rating': 'A',
+          'description': 'This is a charity description',
+          'website': 'This is a charity URL'
+        },
+               {
+          'name': 'charity9',
+          'category': 'category5',
+          'rating': 'A',
+          'description': 'This is a charity description',
+          'website': 'This is a charity URL'
         }
 
       ],
