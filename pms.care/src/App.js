@@ -176,7 +176,7 @@ class App extends Component {
         {!this.state.processStarted ? <Landing/> : this.state.isCharityChosen ? 
         <Package mindItems={this.state.mindItems} bodyItems={this.state.bodyItems} soulItems={this.state.soulItems} cart={this.state.cart}
         addToCart={this.addToCart}/> 
-        : this.state.customCharityIsChosen ? <CustomCharity charityList={this.state.charityList} charityCategories={this.state.charityCategories}/> :
+        : this.state.customCharityIsChosen ? <CustomCharity charityList={this.state.charityList} charityCategories={this.state.charityCategories} charityIsChosen={this.charityIsChosen}/> :
         <CharityOption customCharityIsChosen={this.customCharityIsChosen}  charityIsChosen={this.charityIsChosen}/>}
         {this.state.isCharityChosen ? <Footer cart={this.state.cart} /> : ''}
       </div>
