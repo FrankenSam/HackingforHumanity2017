@@ -13,8 +13,8 @@ class Landing extends Component {
     return (
       <div>
         <div className='container mainDesc'>
-          <img className='img-responsive' src={logo} />
-          <h4>PMS Crate is a crate subscription service that combines <strong>self-care</strong> and <strong>philanthropy</strong></h4>
+          <img className='img-responsive logo' src={logo} />
+          <h3>PMS Crate is a crate subscription service that combines <strong>self-care</strong> and <strong>philanthropy</strong></h3>
           <button className='btn getStarted' onClick={this.props.processStarted}>Sounds great, let's start!</button>
         </div>
         <div className='work row'>
@@ -29,7 +29,7 @@ class Landing extends Component {
             <div className='step col-md-4'>
               <img className='img-responsive img-step' src={step2}/>
               <h4 className='stepHeader'>Step 2</h4>
-              <p>Pick products for your crate from a curated list of self-car items for your mind, body, and soul.</p>
+              <p>Pick products for your crate from a curated list of self-care items for your mind, body, and soul.</p>
               <p>We help support small women-owned businesses and indie brands.</p>
             </div>
             <div className='step col-md-4'>

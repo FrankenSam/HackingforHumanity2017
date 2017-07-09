@@ -66,8 +66,14 @@ p {
   padding: 15px 44px 15px 44px;
 }
 
+h3{
+  width:75%;
+  max-width:30em;
+  line-height:140%;
+}
+
 .getStarted {
-  margin-top:2em;
+  margin-top:-2em;
   padding: 15px 44px 15px 44px;
   color: #6a5b7f;
   font-family: 'Lato', sans-serif;
@@ -76,6 +82,10 @@ p {
 
 .work {
   background-color: #D8C9E9;
+}
+
+img.logo{
+  margin-bottom:-2em;
 }
 
 h3{
