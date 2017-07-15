@@ -29,13 +29,15 @@ p {
 }
 
 a{
-  font-style:italic;
+  font-style: italic;
   text-decoration:underline;
   color:#b8a7d1;
 }
 
 a:hover{
-  font-style:italic;
+  font-style: italic;
+  background-color: #ffeb99;
+  color: #6a5b7f;
 }
 
 .product-page h1{
@@ -121,6 +123,7 @@ h3{
 
 img.logo{
   margin-bottom:-2em;
+  max-width: 800px;
 }
 
 h3{
